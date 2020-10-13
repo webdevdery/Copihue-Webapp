@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Crypto Backed Stablecoin Pegged To Chilean Currency">
+  <meta name="author" content="Copihue Financial">
+  <title>Copihue - Crypto Backed Stablecoin Pegged To Chilean Currency</title>
+  <!-- Favicon -->
+  <link rel="icon" href="img/copihue-24x24-icon.png" type="image/png">
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css"><!-- Page CSS -->
+  <link rel="stylesheet" href="libs/fullcalendar/dist/fullcalendar.min.css">
+  <!-- Purpose CSS -->
+  <link rel="stylesheet" href="css/purpose.css" id="stylesheet">
+</head>
+
+<body class="application application-offset">
+  <!-- Application container -->
+  <div class="container-fluid container-application">
+    <!-- Sidenav -->
+    <div class="sidenav" id="sidenav-main">
+      <!-- Sidenav header -->
+      <div class="sidenav-header d-flex align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="img/copihue-white-lines-logo.png" class="navbar-brand-img" alt="...">
+        </a>
+        <div class="ml-auto">
+          <!-- Sidenav toggler -->
+          <div class="sidenav-toggler sidenav-toggler-dark d-md-none" data-action="sidenav-unpin" data-target="#sidenav-main">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- User mini profile -->
+      <div class="sidenav-user d-flex flex-column align-items-center justify-content-between text-center">
+        <!-- Avatar -->
+        <div>
+          <a href="#" class="avatar rounded-circle avatar-xl">
+            <img alt="Image placeholder" src="img/carlos-baeza-avatar.jpg" class="">
+          </a>
+          <div class="mt-4">
+            <h5 class="mb-0 text-white">baeza.eth</h5>
+            <span class="d-block text-white opacity-8 mb-3" style="font-size:.78rem">0x509FDE5CFc41B388eBCa0AAa3Ab9e511A704729F</span>
+            <a href="#" class="btn btn-sm btn-white btn-icon rounded-pill shadow hover-translate-y-n3">
+              <span class="btn-inner--icon"><img alt="Image placeholder" src="img/copihue-24x24-icon-red.png" class="img-fluid"></span>
+              <span class="btn-inner--text">$6.750.999</span>
+            </a>
+          </div>
+        </div>
+        <!-- User info -->
+        <!-- Actions -->
+        <div class="w-100 mt-4 actions d-flex justify-content-between">
+          <a href="#" class="action-item action-item-lg text-white pl-0">
+            <i class="fas fa-user"></i>
+          </a>
+          <a href="#" class="action-item action-item-lg text-white pl-0">
+            <i class="fas fa-sliders-h"></i>
+          </a>
+          <a href="#" class="action-item action-item-lg text-white pr-0">
+            <span class="badge badge-success">
+              <i class="fas fa-award"></i>
+          </span>
+          </a>
+        </div>
+      </div>
+      <!-- Application nav -->
+      <div class="nav-application clearfix">
+        <a href="#" class="btn btn-square text-sm active">
+          <span class="btn-inner--icon d-block"><i class="fas fa-home fa-2x"></i></span>
+          <span class="btn-inner--icon d-block pt-2">Home</span>
+        </a>
+        <a href="#" class="btn btn-square text-sm">
+          <span class="btn-inner--icon d-block"><i class="fas fa-piggy-bank fa-2x"></i></span>
+          <span class="btn-inner--icon d-block pt-2">Vaults</span>
+        </a>
+        <a href="#" class="btn btn-square text-sm">
+          <span class="btn-inner--icon d-block"><i class="fas fa-wallet fa-2x"></i></span>
+          <span class="btn-inner--icon d-block pt-2">Accounting</span>
+        </a>
+        <a href="#" class="btn btn-square text-sm">
+          <span class="btn-inner--icon d-block"><i class="fas fa-scroll fa-2x"></i></span>
+          <span class="btn-inner--icon d-block pt-2">Invoices</span>
+        </a>
+        <a href="#" class="btn btn-square text-sm">
+          <span class="btn-inner--icon d-block"><i class="fas fa-people-arrows fa-2x"></i></span>
+          <span class="btn-inner--icon d-block pt-2">Connect</span>
+        </a>
+      </div>
+      
+    </div>
+    <!-- Content -->
+    <div class="main-content position-relative">
+      <!-- Main nav -->
+      <nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-primary navbar-border" id="navbar-main">
+        <div class="container-fluid">
+          <!-- Brand + Toggler (for mobile devices) -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- User's navbar -->
+          <div class="navbar-user d-lg-none ml-auto">
+            <ul class="navbar-nav flex-row align-items-center">
+              <li class="nav-item dropdown dropdown-animate">
+                <a class="nav-link nav-link-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell"></i></a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg dropdown-menu-arrow p-0">
+                  <div class="py-3 px-3">
+                    <h5 class="heading h6 mb-0">Notifications</h5>
+                  </div>
+                  <div class="list-group list-group-flush">
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
+                        <div>
+                          <span class="avatar bg-primary text-white rounded-circle">AM</span>
+                        </div>
+                        <div class="flex-fill ml-3">
+                          <div class="h6 text-sm mb-0">Alex Michael <small class="float-right text-muted">2 hrs ago</small></div>
+                          <p class="text-sm lh-140 mb-0">
+                            Some quick example text to build on the card title.
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
+                        <div>
+                          <span class="avatar bg-warning text-white rounded-circle">SW</span>
+                        </div>
+                        <div class="flex-fill ml-3">
+                          <div class="h6 text-sm mb-0">Sandra Wayne <small class="float-right text-muted">3 hrs ago</small></div>
+                          <p class="text-sm lh-140 mb-0">
+                            Some quick example text to build on the card title.
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="5 hrs ago">
+                        <div>
+                          <span class="avatar bg-info text-white rounded-circle">JM</span>
+                        </div>
+                        <div class="flex-fill ml-3">
+                          <div class="h6 text-sm mb-0">Jason Miller <small class="float-right text-muted">5 hrs ago</small></div>
+                          <p class="text-sm lh-140 mb-0">
+                            Some quick example text to build on the card title.
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
+                        <div>
+                          <span class="avatar bg-dark text-white rounded-circle">MJ</span>
+                        </div>
+                        <div class="flex-fill ml-3">
+                          <div class="h6 text-sm mb-0">Mike Thomson <small class="float-right text-muted">2 hrs ago</small></div>
+                          <p class="text-sm lh-140 mb-0">
+                            Some quick example text to build on the card title.
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
+                        <div>
+                          <span class="avatar bg-primary text-white rounded-circle">RN</span>
+                        </div>
+                        <div class="flex-fill ml-3">
+                          <div class="h6 text-sm mb-0">Richard Nixon <small class="float-right text-muted">3 hrs ago</small></div>
+                          <p class="text-sm lh-140 mb-0">
+                            Some quick example text to build on the card title.
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="py-3 text-center">
+                    <a href="#" class="link link-sm link--style-3">View all notifications</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-animate">
+                <a class="nav-link pr-lg-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="avatar avatar-sm rounded-circle">
+                    <img alt="Image placeholder" src="assets/img/theme/light/team-4-800x800.jpg">
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right dropdown-menu-arrow">
+                  <h6 class="dropdown-header px-0">Hi, Heather!</h6>
+                  <a href="user/profile.html" class="dropdown-item">
+                    <i class="fas fa-user"></i>
+                    <span>My profile</span>
+                  </a>
+                  <a href="account/settings.html" class="dropdown-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                  </a>
+                  <a href="account/billing.html" class="dropdown-item">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Billing</span>
+                  </a>
+                  <a href="shop/orders.html" class="dropdown-item">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span>Orders</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a href="authentication/login.html" class="dropdown-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Navbar nav -->
+          <div class="collapse navbar-collapse navbar-collapse-fade" id="navbar-main-collapse">
+            <ul class="navbar-nav align-items-lg-center">
+              <!-- Overview  -->
+              <li class="nav-item d-lg-none ">
+                <a class="nav-link" href="index.html">
+                  Overview
+                </a>
+              </li>
+              <li class="border-top opacity-2 my-2"></li>
+              <!-- Home  -->
+              <li class="nav-item ">
+                <a class="nav-link pl-lg-0" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link pl-lg-0" href="#">
+                  Who We Are?
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link pl-lg-0" href="#">
+                  KYC Compliance
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link pl-lg-0" href="#">
+                  Partnerships
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link pl-lg-0" href="#">
+                  Contact Us
+                </a>
+              </li>
+            </ul><!-- Right menu -->
+            <ul class="navbar-nav ml-lg-auto align-items-center d-none d-lg-flex">
+              <li class="nav-item">
+                <a class="nav-link pr-lg-0" href="#" role="button">
+                  <div class="media media-pill align-items-center">
+                    <span class="avatar rounded-circle">
+                      <img alt="Image placeholder" src="img/metamask-logo.gif">
+                    </span>
+                    <div class="ml-2 d-none d-lg-block">
+                      <span class="mb-0 text-sm  font-weight-bold">Connect Metamask</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Page content -->
+      <div class="page-content">
+        <!-- Page title -->
+        <div class="page-title">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <h5 class="h3 font-weight-400 mb-0 text-white">Dashboard</h5>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- Stats -->
+        <div class="row">
+          <div class="col-xl-3 col-md-6">
+            <div class="card card-stats">
+              <!-- Card body -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h6 class="text-muted mb-1">Ethereum</h6>
+                    <span class="h3 font-weight-bold mb-0 ">$7.500</span>
+                  </div>
+                  <div class="col-auto">
+                    <span class="avatar rounded-circle">
+                      <img alt="Image placeholder" src="img/eth-icon-logo.png">
+                    </span>
+                  </div>
+                  <div class="col">
+                    <p class="mt-2 mb-0 text-sm">
+                      <span class="badge badge-soft-success mr-2"><i class="fas fa-arrow-up"></i> 25%</span>
+                      <span class="text-nowrap">last 24 hours</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="card card-stats">
+              <!-- Card body -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h6 class="text-muted mb-1">Bitcoin</h6>
+                    <span class="h3 font-weight-bold mb-0 ">$7.500</span>
+                  </div>
+                  <div class="col-auto">
+                    <span class="avatar rounded-circle">
+                      <img alt="Image placeholder" src="img/btc-icon-logo.png">
+                    </span>
+                  </div>
+                  <div class="col">
+                    <p class="mt-2 mb-0 text-sm">
+                      <span class="badge badge-soft-success mr-2"><i class="fas fa-arrow-up"></i> 25%</span>
+                      <span class="text-nowrap">last 24 hours</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="card card-stats">
+              <!-- Card body -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h6 class="text-muted mb-1">Bitcoin Cash</h6>
+                    <span class="h3 font-weight-bold mb-0 ">$7.500</span>
+                  </div>
+                  <div class="col-auto">
+                    <span class="avatar rounded-circle">
+                      <img alt="Image placeholder" src="img/bch-icon-logo.png">
+                    </span>
+                  </div>
+                  <div class="col">
+                    <p class="mt-2 mb-0 text-sm">
+                      <span class="badge badge-soft-success mr-2"><i class="fas fa-arrow-up"></i> 25%</span>
+                      <span class="text-nowrap">last 24 hours</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="card card-stats">
+              <!-- Card body -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h6 class="text-muted mb-1">Litecoin</h6>
+                    <span class="h3 font-weight-bold mb-0 ">$7.500</span>
+                  </div>
+                  <div class="col-auto">
+                    <span class="avatar rounded-circle">
+                      <img alt="Image placeholder" src="img/ltc-icon-logo.png">
+                    </span>
+                  </div>
+                  <div class="col">
+                    <p class="mt-2 mb-0 text-sm">
+                      <span class="badge badge-soft-success mr-2"><i class="fas fa-arrow-up"></i> 25%</span>
+                      <span class="text-nowrap">last 24 hours</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="row">
+          <div class="col-xl-8 col-md-6">
+            <div class="card card-fluid">
+              <div class="card-header">
+                <h6 class="mb-0">Pending for Inspiration</h6>
+              </div>
+              <div class="card-body">
+                <!-- Chart -->
+                <div id="apex-engagement" data-color="primary" data-height="280"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="card card-fluid">
+              <div class="card-body text-center d-flex flex-column justify-content-center">
+                <h5 class="mb-4">Overview</h5>
+                <div class="progress-circle progress-lg mx-auto" id="progress-5" data-progress="50" data-text="5000" data-textclass="h1" data-color="warning"></div>
+                <div class="d-flex mt-4">
+                  <div class="col">
+                    <span class="d-block badge badge-dot badge-lg h6">
+                      <i class="bg-danger"></i>30 not sent
+                    </span>
+                    <span class="d-block badge badge-dot badge-lg h6">
+                      <i class="bg-success"></i>68 success
+                    </span>
+                  </div>
+                  <div class="col">
+                    <span class="d-block badge badge-dot badge-lg h6">
+                      <i class="bg-warning"></i>38 opened
+                    </span>
+                    <span class="d-block badge badge-dot badge-lg h6">
+                      <i class="bg-danger"></i>SMTP error
+                    </span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-block btn-secondary mt-auto">Open insights</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="card card-fluid">
+              <div class="card-header border-0">
+                <h6 class="mb-0">Recent Transactions</h6>
+              </div>
+
+                <div class="table-responsive">
+                  <table class="table align-items-center">
+                    <thead>
+                      <tr>
+                          <th scope="col">Transaction</th>
+                          <th scope="col">Amount</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Between</th>
+                          <th scope="col">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody class="list">
+                      <tr>
+                        <td>
+                          <div class="media align-items-center">
+                            <div>
+                              <span class="avatar bg-warning text-white rounded-circle"><i class="far fa-hourglass"></i></span>
+                            </div>
+                            <div class="media-body ml-4">
+                                <a href="#" class="name mb-0 h6 text-sm">0x33ae74ad0cae6...</a>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="budget">$2500 USD</td>
+                        <td>
+                          21 Oct 2020
+                        </td>
+                        <td>  
+                          <div class="avatar-group">
+                            <a href="#" class="avatar rounded-circle avatar-sm">
+                            <img alt="Image placeholder" src="img/carlos-baeza-avatar.jpg" class="">
+                            </a>
+                              <a href="#" class="avatar rounded-circle avatar-sm">
+                              <img alt="Image placeholder" src="img/woman1-avatar.jpg" class="">
+                            </a>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="badge badge-dot mr-4">
+                            <i class="bg-warning"></i> <span class="status">pending</span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="media align-items-center">
+                            <div>
+                              <span class="avatar bg-primary text-white rounded-circle"><i class="fas fa-times"></i></span>
+                            </div>
+                            <div class="media-body ml-4">
+                                <a href="#" class="name mb-0 h6 text-sm">0x33ae74ad0cae6...</a>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="budget">$2500 USD</td>
+                        <td>
+                          21 Oct 2020
+                        </td>
+                        <td>  
+                          <div class="avatar-group">
+                            <a href="#" class="avatar rounded-circle avatar-sm">
+                            <img alt="Image placeholder" src="img/carlos-baeza-avatar.jpg" class="">
+                            </a>
+                              <a href="#" class="avatar rounded-circle avatar-sm">
+                              <img alt="Image placeholder" src="img/guy1-avatar.jpg" class="">
+                            </a>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="badge badge-dot mr-4">
+                            <i class="bg-primary"></i> <span class="status">failed</span>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="media align-items-center">
+                            <div>
+                              <span class="avatar bg-success text-white rounded-circle"><i class="fas fa-check"></i></span>
+                            </div>
+                            <div class="media-body ml-4">
+                                <a href="#" class="name mb-0 h6 text-sm">0x33ae74ad0cae6...</a>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="budget">$2500 USD</td>
+                        <td>
+                          21 Oct 2020
+                        </td>
+                        <td>  
+                          <div class="avatar-group">
+                            <a href="#" class="avatar rounded-circle avatar-sm">
+                            <img alt="Image placeholder" src="img/carlos-baeza-avatar.jpg" class="">
+                            </a>
+                              <a href="#" class="avatar rounded-circle avatar-sm">
+                              <img alt="Image placeholder" src="img/pizza-business-avatar.jpg" class="">
+                            </a>
+                          </div>
+                        </td>
+                        <td>
+                          <span class="badge badge-dot mr-4">
+                            <i class="bg-success"></i> <span class="status">completed</span>
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+     
+      </div>
+      <!-- Footer -->
+      <div class="footer pt-5 pb-4 footer-light" id="footer-main">
+        <div class="row text-center text-sm-left align-items-sm-center">
+          <div class="col-sm-6">
+            <p class="text-sm mb-0">&copy; 2020 <a href="https://copihue.financial" class="h6 text-sm" target="_blank">Copihue Financial</a>, maded by <a href="https://spore.cl" class="h6 text-sm" target="_blank">Spore Engineering.</a></p>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+  <!-- Scripts -->
+  <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+  <script src="assets/js/purpose.core.js"></script>
+  <!-- Page JS -->
+  <script src="libs/progressbar.js/dist/progressbar.min.js"></script>
+  <script src="libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="libs/moment/min/moment.min.js"></script>
+  <script src="libs/fullcalendar/dist/fullcalendar.min.js"></script>
+  <!-- Purpose JS -->
+  <script src="assets/js/purpose.js"></script>
+  <!-- Demo JS - remove it when starting your project -->
+  <script src="assets/js/demo.js"></script>
+</body>
+
+</html>
